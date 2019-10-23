@@ -1,0 +1,102 @@
+[
+  {
+    "EmailAddress": "mwhite@student.hathaway.edu",
+    "FirstName": "Maya",
+    "LastName": "White"
+  },
+  {
+    "EmailAddress": "bmwangi@hathaway.edu",
+    "FirstName": "Benjamin",
+    "LastName": "Mwangi"
+  },
+  {
+    "EmailAddress": "enemec@hathaway.edu",
+    "FirstName": "Elizabeth",
+    "LastName": "Nemec"
+  },
+  {
+    "EmailAddress": "eruiz@hathaway.edu",
+    "FirstName": "Edward",
+    "LastName": "Ruiz, Jr."
+  },
+  {
+    "EmailAddress": "j.roberson@hathaway.edu",
+    "FirstName": "Joshua",
+    "LastName": "Roberson"
+  },
+  {
+    "EmailAddress": "lschwartz@hathaway.edu",
+    "FirstName": "Lee",
+    "LastName": "Schwartz"
+  },
+  {
+    "EmailAddress": "gzhang@hathaway.edu",
+    "FirstName": "Grace",
+    "LastName": "Zhang"
+  },
+  {
+    "EmailAddress": "blowe@hathaway.edu",
+    "FirstName": "Brittany",
+    "LastName": "Lowe"
+  },
+  {
+    "EmailAddress": "jpowers@hathaway.edu",
+    "FirstName": "Jackson",
+    "LastName": "Powers"
+  },
+  {
+    "EmailAddress": "l.herrera@hathaway.edu",
+    "FirstName": "Lina",
+    "LastName": "Herrera"
+  },
+  {
+    "EmailAddress": "cross@hathaway.edu",
+    "FirstName": "Chelsea",
+    "LastName": "Ross"
+  },
+  {
+    "EmailAddress": "kbyrd@hathaway.edu",
+    "FirstName": "Kate",
+    "LastName": "Byrd"
+  },
+  {
+    "EmailAddress": "gbryan@hathaway.edu",
+    "FirstName": "Gilberto",
+    "LastName": "Lewis"
+  },
+  {
+    "EmailAddress": "mgarza@hathaway.edu",
+    "FirstName": "Mary",
+    "LastName": "Garza, Sr."
+  },
+  {
+    "EmailAddress": "rstephens@hathaway.edu",
+    "FirstName": "Renee",
+    "LastName": "Stephens"
+  },
+  {
+    "EmailAddress": "jmoody@hathaway.edu",
+    "FirstName": "John",
+    "LastName": "Moody"
+  },
+  {
+    "EmailAddress": "msparks@hathaway.edu",
+    "FirstName": "Myra",
+    "LastName": "Sparks"
+  },
+  {
+    "EmailAddress": "r.olson@hathaway.edu",
+    "FirstName": "Rachel",
+    "LastName": "Olson"
+  },
+  {
+    "EmailAddress": "sfox@hathaway.edu",
+    "FirstName": "Samuel",
+    "LastName": "Fox"
+  },
+  {
+    "EmailAddress": "jrichards2@hathaway.edu",
+    "FirstName": "James",
+    "LastName": "Richards"
+  }
+]
