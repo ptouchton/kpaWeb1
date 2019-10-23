@@ -1,5 +1,5 @@
-import { Http, Response } from '@angular/http';
-import { Observable } from 'rxjs/Observable';
+﻿import { Http, Response } from '@angular/http';
+import { Observable, throwError } from 'rxjs';
 
 export class ServiceBase {
     constructor(protected _http: Http) { }
@@ -12,8 +12,6 @@ export class ServiceBase {
     protected handleError(error: any) {
         const errMsg = (error.message) ? error.message :
             error.status ? `${error.status} - ${error.statusText}` : 'Server error';
-        return Observable.throw(errMsg);
+        return throwError(errMsg);
     }
-
-    
 }
