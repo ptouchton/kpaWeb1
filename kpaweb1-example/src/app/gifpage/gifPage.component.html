@@ -1,4 +1,4 @@
-<!-- Search form -->
+﻿<!-- Search form -->
 <br />
 <form name="gifSearchForm" id="gifSearchForm" #gifSearchForm="ngForm" novalidate (submit)="onSubmit(gifSearchForm.valid)">
   <div class="container">
@@ -19,10 +19,8 @@
         <button class="btn btn-outline-secondary" type="submit">Search</button>
       </div>
     </div>
-    <div>
-      <div *ngFor="let gif of returnedGifs; let i = index">
-        <img width="200" src="{{gif.images.fixed_height_still.url}}">
-      </div>
+    <div *ngFor="let gif of returnedGifs; let i = index">
+      <img src="{{gif.images.fixed_height_still.url}}" class="d-block w-100" alt="...">
     </div>
   </div>
 </form>
