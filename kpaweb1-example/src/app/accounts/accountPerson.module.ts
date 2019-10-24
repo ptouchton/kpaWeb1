@@ -4,7 +4,7 @@ import { HttpModule } from '@angular/http';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { AccountPersonComponent } from './accountPerson.component';
 import { AccountPersonService } from './accountPerson.service';
-import { FormsModule } from '@angular/forms';;
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
     declarations: [
@@ -12,7 +12,6 @@ import { FormsModule } from '@angular/forms';;
     ],
     imports: [
         BrowserModule,
-        HttpModule,
         HttpClientModule,
         FormsModule
     ],

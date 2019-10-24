@@ -5,14 +5,8 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  
-
-    constructor() {
-      //this.Initialize();  
-    }
-
-
-    public title = 'kpaweb1-example';
+  // should be in a resource file
+  public title = 'kpaweb1-example';
 
 }
 

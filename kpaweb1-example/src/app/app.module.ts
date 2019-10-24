@@ -17,7 +17,6 @@ import { GifPageModule } from './gifpage/gifPage.module';
     ],
     imports: [
         BrowserModule,
-        HttpModule,
         FormsModule,
         AppRoutingModule,
         AccountPersonModule,

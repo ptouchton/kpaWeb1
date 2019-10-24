@@ -19,7 +19,7 @@ export class GifPageComponent implements OnInit {
   ngOnInit() {
   }
 
-  public onSubmit(formValid: boolean) : boolean {
+  public onSubmit(formValid: boolean): boolean {
         this.submitted = true;
 
         // stop here if form is invalid
@@ -27,7 +27,7 @@ export class GifPageComponent implements OnInit {
           return false;
         }
 
-        this._service.getGifs(this.SearchTerm).subscribe(results => {this.returnedGifs = results.data});
+        this._service.getGifs(this.SearchTerm).subscribe(results => {this.returnedGifs = results.data; });
 
     }
 

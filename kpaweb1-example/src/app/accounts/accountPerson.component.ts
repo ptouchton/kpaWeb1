@@ -4,13 +4,10 @@ import { AccountPerson } from '../common/models/accountPerson';
 import { NgForm } from '@angular/forms';
 
 @Component({
-  selector: 'account-person',
+  selector: 'kpa-account-person',
   templateUrl: './accountPerson.component.html'
 })
-export class AccountPersonComponent {
-  
-
-
+export class AccountPersonComponent implements OnInit {
     public AccountPersons: Array<AccountPerson> = [];
     public submitted = false;
     public accountPersonForm: NgForm;
@@ -18,9 +15,12 @@ export class AccountPersonComponent {
     constructor(private _service: AccountPersonService) {
     }
 
-    ngOnInit(){
+    ngOnInit() {
+
        this.onInitialize();
+
     }
+
     private onInitialize() {
 
       if (this.submitted) {
@@ -41,7 +41,7 @@ export class AccountPersonComponent {
     public onEmailAddressChanged() {
     }
 
-    public onSubmit(formValid: boolean) : boolean {
+    public onSubmit(formValid: boolean): boolean {
         this.submitted = true;
 
         // stop here if form is invalid

@@ -8,18 +8,17 @@ import { ServiceBase } from '../common/services/serviceBase';
 
 
 @Injectable()
-export class GifPageService extends ServiceBase{
+export class GifPageService extends ServiceBase {
 
-   private giphyApi = '//api.giphy.com/v1/gifs/search?api_key=dc6zaTOxFJmzC&&limit=5&q=';
-   private apiKey = 'dc6zaTOxFJmzC';
-
+   private apiKey = 'dc6zaTOxFJmzC'; // ideally this would be in an encrypted environment file
+   private giphyApi = `//api.giphy.com/v1/gifs/search?api_key=${this.apiKey}&limit=5&q=`;
    constructor(private http: HttpClient) {
           super(http);
     }
 
     public getGifs(search: string): Observable<any> {
 
-       let url = this.giphyApi + search;
+       const url = this.giphyApi + search;
 
       return this._http.get<any>(url);
     }
