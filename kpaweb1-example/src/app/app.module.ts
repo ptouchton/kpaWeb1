@@ -1,20 +1,28 @@
-﻿import { BrowserModule } from '@angular/platform-browser';
+import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { HttpModule } from '@angular/http';
 import { AppComponent } from './app.component';
-import { AppService } from './app.service';
 import { FormsModule } from '@angular/forms';
+import { AppRoutingModule } from './/app-routing.module';
+import { AccountPersonModule } from './accounts/accountPerson.module';
+import { HomePageComponent } from './homepage/homePage.component';
+import { AboutPageComponent } from './aboutpage/aboutPage.component';
+import { GifPageModule } from './gifpage/gifPage.module';
 
 @NgModule({
     declarations: [
-        AppComponent
+        AppComponent,
+        HomePageComponent,
+        AboutPageComponent
     ],
     imports: [
         BrowserModule,
-        HttpModule,
-        FormsModule
+        FormsModule,
+        AppRoutingModule,
+        AccountPersonModule,
+        GifPageModule
     ],
-    providers: [AppService],
+    providers: [],
     bootstrap: [AppComponent]
 })
 export class AppModule { }
