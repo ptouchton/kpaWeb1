@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { AccountPersonService } from './accountPerson.service';
 import { AccountPerson } from '../common/models/accountPerson';
 import { NgForm } from '@angular/forms';
