@@ -1,0 +1,28 @@
+<!-- Search form -->
+<br />
+<form name="gifSearchForm" id="gifSearchForm" #gifSearchForm="ngForm" novalidate (submit)="onSubmit(gifSearchForm.valid)">
+  <div class="container">
+    <div class="input-group mb-3">
+      <div *ngIf="gifSearchForm.submitted && searchInput.errors && searchInput.errors.required" class="alert-warning">A search term is required</div>
+      <input type="text"
+             class="form-control"
+             placeholder="Enter a search to find some GIFs"
+             aria-label="GIF Search"
+             aria-describedby="basic-addon2"
+             id="searchInput"
+             name="searchInput"
+             #searchInput="ngModel"
+             required
+             [(ngModel)]="SearchTerm"
+             [ngClass]="{ 'is-invalid' : gifSearchForm.submitted || searchInput.errors }">
+      <div class="input-group-append">
+        <button class="btn btn-outline-secondary" type="submit">Search</button>
+      </div>
+    </div>
+    <div>
+      <div *ngFor="let gif of returnedGifs; let i = index">
+        <img width="200" src="{{gif.images.fixed_height_still.url}}">
+      </div>
+    </div>
+  </div>
+</form>
