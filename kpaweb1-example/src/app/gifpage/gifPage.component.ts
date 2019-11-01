@@ -1,7 +1,9 @@
-import { Component, OnInit } from '@angular/core';
+﻿import { Component, OnInit } from '@angular/core';
 import { GifPageService } from './gifPage.service';
 import { NgForm } from '@angular/forms';
-
+import { GiphyDetails } from '../common/models/giphyDetails';
+import { Observable } from 'rxjs';
+import { RootObject, Datum } from "../common/models/giphyModel";
 @Component({
   selector: 'kpa-gif-page',
   templateUrl: './gifPage.component.html',
@@ -12,7 +14,7 @@ export class GifPageComponent implements OnInit {
   public SearchTerm = '';
   public submitted = false;
   public gifSearchForm: NgForm;
-  public returnedGifs: any;
+  public results: Observable<Datum[]>;
 
   constructor(private _service: GifPageService) { }
 
@@ -27,8 +29,8 @@ export class GifPageComponent implements OnInit {
           return false;
         }
 
-        this._service.getGifs(this.SearchTerm).subscribe(results => {this.returnedGifs = results.data; });
-
-    }
+        this.results = this._service.getGifs(this.SearchTerm);
+        let i = 1;
+  }
 
 }
