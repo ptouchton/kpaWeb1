@@ -33,7 +33,10 @@ export class AccountPersonComponent implements OnInit {
             });
     }
 
-    public onFirstNameChanged() {
+    public updatePerson(accountPerson: AccountPerson) {
+      this._service.updateAccountPerson(accountPerson).subscribe(res => {
+        console.log(`Updated: ${res.id}`);
+      });
     }
 
     public onLastNameChanged() {
@@ -42,6 +45,7 @@ export class AccountPersonComponent implements OnInit {
     public onEmailAddressChanged() {
     }
 
+
     public onSubmit(formValid: boolean): boolean {
         this.submitted = true;
 
@@ -49,6 +53,7 @@ export class AccountPersonComponent implements OnInit {
         if (!formValid) {
           return false;
         }
+
     }
 }
 

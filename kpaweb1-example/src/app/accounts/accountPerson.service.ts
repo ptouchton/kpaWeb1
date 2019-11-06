@@ -16,4 +16,8 @@ export class AccountPersonService extends ServiceBase {
 
       return this._http.get<Array<AccountPerson>>(this.url);
     }
+
+    public updateAccountPerson(accountPerson: AccountPerson): Observable<AccountPerson> {
+      return this._http.put<AccountPerson>(`${this.url}`, accountPerson);
+    }
 }

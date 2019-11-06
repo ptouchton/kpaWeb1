@@ -22,7 +22,6 @@
                placeholder="Enter a First Name"
                required
                [(ngModel)]="ap.FirstName"
-               (ngModelChange)="onFirstNameChanged()"
                [ngClass]="{ 'is-invalid' : accountPersonForm.submitted || firstNameInput.errors }">
       </td>
       <td>
@@ -37,7 +36,6 @@
                class="form-control"
                required
                [(ngModel)]="ap.LastName"
-               (ngModelChange)="onLastNameChanged()"
                [ngClass]="{ 'is-invalid' : accountPersonForm.submitted || lastNameInput.errors }">
       </td>
       <td>
@@ -55,6 +53,7 @@
                (ngModelChange)="onEmailAddressChanged()"
                [ngClass]="{ 'is-invalid' : accountPersonForm.submitted || emailAddressInput.errors }">
       </td>
+      <button (click)="updatePerson(ap)">Update</button>
     </tr>
     </tbody>
   </table>

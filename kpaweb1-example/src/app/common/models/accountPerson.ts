@@ -1,5 +1,6 @@
 export class AccountPerson {
-    public EmaillAddress = '';
-    public FirstName = '';
-    public LastName = '';
+    public id: number;
+    public emaillAddress = '';
+    public firstName = '';
+    public lastName = '';
 }
