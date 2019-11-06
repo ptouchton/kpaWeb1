@@ -5,6 +5,7 @@ import { NgForm } from '@angular/forms';
 
 @Component({
   selector: 'kpa-account-person',
+  providers: [ AccountPersonService ],
   templateUrl: './accountPerson.component.html'
 })
 export class AccountPersonComponent implements OnInit {
